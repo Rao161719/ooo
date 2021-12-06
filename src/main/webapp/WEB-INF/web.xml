@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--图片验证码-->
+    <servlet>
+        <servlet-name>ServletOne</servlet-name>
+        <servlet-class>com.example.ooo.ServletOne</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletOne</servlet-name>
+        <url-pattern>/one</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletTwo</servlet-name>
+        <servlet-class>com.example.ooo.ServletTwo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletTwo</servlet-name>
+        <url-pattern>/two</url-pattern>
+    </servlet-mapping>
+    <!--欢迎界面-->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!--查询-->
+    <servlet>
+        <servlet-name>ServletSelect</servlet-name>
+        <servlet-class>com.example.ooo.ServletSelect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletSelect</servlet-name>
+        <url-pattern>/select</url-pattern>
+    </servlet-mapping>
+    <!--插入-->
+    <servlet>
+        <servlet-name>ServletInsert</servlet-name>
+        <servlet-class>com.example.ooo.ServletInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletInsert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    <!--删除-->
+    <servlet>
+        <servlet-name>ServletDelete</servlet-name>
+        <servlet-class>com.example.ooo.ServletDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDelete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+</web-app>
