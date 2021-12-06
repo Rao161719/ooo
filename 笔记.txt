@@ -1,4 +1,4 @@
-在idea上使用git
+在idea上使用git---
 
 1.进入git官网下载git到本地并解压
 2.File > Settings > Git > Path to Git executable
